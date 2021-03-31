@@ -6,6 +6,12 @@ This project handles check run and check suite webhook events and uses the Octok
 
 To learn how to set up a template GitHub App, follow the "[Setting up your development environment](https://developer.github.com/apps/quickstart-guides/setting-up-your-development-environment/)" quickstart guide on developer.github.com.
 
+## Run the server using Docker
+
+1. `docker build -t creating-ci-tests-with-the-checks-api .`
+1. `docker run --env-file .env -p 3000:3000 creating-ci-tests-with-the-checks-api`
+1. View the app at `localhost:3000`.
+
 ## Install
 
 To run the code, make sure you have [Bundler](http://gembundler.com/) installed; then enter `bundle install` on the command line.
