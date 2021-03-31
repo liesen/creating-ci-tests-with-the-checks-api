@@ -6,6 +6,13 @@ This project handles check run and check suite webhook events and uses the Octok
 
 To learn how to set up a template GitHub App, follow the "[Setting up your development environment](https://developer.github.com/apps/quickstart-guides/setting-up-your-development-environment/)" quickstart guide on developer.github.com.
 
+## GitHub App permissions
+
+Make sure your GitHub App has these permissions:
+
+* **Read** access to code and metadata
+* **Read** and **write** access to checks
+
 ## Run the server using Docker
 
 1. `docker build -t creating-ci-tests-with-the-checks-api .`
